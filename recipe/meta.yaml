@@ -64,6 +64,7 @@ test:
 about:
   home: https://github.com/PyCQA/pylint
   license: GPL 2
+  license_file: COPYING
   summary: 'python code static checker'
 
 extra:
