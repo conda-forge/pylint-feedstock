@@ -29,9 +29,10 @@ requirements:
 
   run:
     - python
-    - astroid >=1.5.1,<1.6.0
+    - astroid >=1.5.1
     - backports.functools_lru_cache  # [py27]
     - configparser                   # [py27]
+    - singledispatch                 # [py27]
     - colorama                       # [win]
     - six
     - isort >=4.2.5
