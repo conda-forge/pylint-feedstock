@@ -1,6 +1,6 @@
 {% set name = "pylint" %}
-{% set version = "1.7.1" %}
-{% set sha256 = "8b4a7ab6cf5062e40e2763c0b4a596020abada1d7304e369578b522e46a6264a" %}
+{% set version = "1.8.1" %}
+{% set sha256 = "3035e44e37cd09919e9edad5573af01d7c6b9c52a0ebb4781185ae7ab690458b" %}
 
 package:
   name: {{ name|lower }}
@@ -71,3 +71,4 @@ about:
 extra:
   recipe-maintainers:
     - jakirkham
+    - timleslie
