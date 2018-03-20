@@ -50,7 +50,7 @@ test:
     # Has no help option.
     # Running without arguments is an error.
     # So just check that it exists.
-    - which epylint     # [unix]
+    - type epylint     # [unix]
     - where epylint     # [win]
     - pyreverse --help
     - symilar --help
