@@ -28,7 +28,7 @@ requirements:
 
   run:
     - python
-    - astroid >=1.5.1
+    - astroid >=1.6,<2.0
     - backports.functools_lru_cache  # [py27]
     - configparser                   # [py27]
     - singledispatch                 # [py27]
