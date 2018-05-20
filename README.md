@@ -14,14 +14,16 @@ Summary: python code static checker
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pylint-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pylint-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pylint-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pylint-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pylint-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pylint-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/pylint-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/pylint-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/pylint-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/pylint-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/pylint-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/pylint-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pylint/badges/version.svg)](https://anaconda.org/conda-forge/pylint)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pylint/badges/downloads.svg)](https://anaconda.org/conda-forge/pylint)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pylint-green.svg)](https://anaconda.org/conda-forge/pylint) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pylint.svg)](https://anaconda.org/conda-forge/pylint) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pylint.svg)](https://anaconda.org/conda-forge/pylint) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pylint.svg)](https://anaconda.org/conda-forge/pylint) |
 
 Installing pylint
 =================
