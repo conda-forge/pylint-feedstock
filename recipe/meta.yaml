@@ -1,6 +1,6 @@
 {% set name = "pylint" %}
-{% set version = "1.9.1" %}
-{% set sha256 = "c353d8225195b37cc3aef18248b8f3fe94c5a6a95affaf885ae21a24ca31d8eb" %}
+{% set version = "1.9.2" %}
+{% set sha256 = "fff220bcb996b4f7e2b0f6812fd81507b72ca4d8c4d05daf2655c333800cb9b3" %}
 
 package:
   name: {{ name|lower }}
