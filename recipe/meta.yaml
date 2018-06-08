@@ -1,6 +1,6 @@
 {% set name = "pylint" %}
-{% set version = "1.9.0" %}
-{% set sha256 = "cf1be367296e9e534a5cb420186ce99f63f17c2b855fcb4321a3e20ce51502cd" %}
+{% set version = "1.9.1" %}
+{% set sha256 = "c353d8225195b37cc3aef18248b8f3fe94c5a6a95affaf885ae21a24ca31d8eb" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
   entry_points:
     - pylint = pylint:run_pylint
