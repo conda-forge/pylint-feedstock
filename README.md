@@ -1,14 +1,16 @@
 About pylint
 ============
 
-Home: https://github.com/PyCQA/pylint
+Home: http://www.pylint.org/
 
-Package license: GPL 2
+Package license: GPL
 
 Feedstock license: BSD 3-Clause
 
 Summary: python code static checker
 
+Pylint is a tool that checks for errors in Python code, tries to enforce a
+coding standard and looks for code smells.
 
 
 Current build status
