@@ -55,7 +55,6 @@ about:
   license: GPL 2
   license_file: COPYING
   summary: 'python code static checker'
-  license: GPL
   description: |
     Pylint is a tool that checks for errors in Python code, tries to enforce a
     coding standard and looks for code smells.
