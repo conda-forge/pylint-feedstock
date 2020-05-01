@@ -26,10 +26,11 @@ requirements:
 
   run:
     - astroid >=2.4.0,<2.5
+    - colorama  # [win]
     - isort >=4.2.5,<5
     - mccabe >=0.6,<0.7
+    - python
     - toml
-    - colorama  # [win]
 
 test:
   imports:
