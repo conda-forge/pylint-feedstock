@@ -30,7 +30,7 @@ requirements:
     - isort >=4.2.5,<5
     - mccabe >=0.6,<0.7
     - python
-    - toml
+    - toml >=0.7.1
 
 test:
   imports:
