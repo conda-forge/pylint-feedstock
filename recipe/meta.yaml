@@ -1,4 +1,4 @@
-{% set version = "2.4.4" %}
+{% set version = "2.5.0" %}
 
 package:
   name: pylint
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pylint/pylint-{{ version }}.tar.gz
-  sha256: 3db5468ad013380e987410a8d6956226963aed94ecb5f9d3a28acca6d9ac36cd
+  sha256: 588e114e3f9a1630428c35b7dd1c82c1c93e1b0e78ee312ae4724c5e1a1e0245
 
 build:
   number: 0
@@ -25,11 +25,12 @@ requirements:
     - pytest-runner
 
   run:
-    - python
-    - astroid >=2.3.0,<2.4
+    - astroid >=2.4.0,<2.5
+    - colorama  # [win]
     - isort >=4.2.5,<5
     - mccabe >=0.6,<0.7
-    - colorama  # [win]
+    - python
+    - toml >=0.7.1
 
 test:
   imports:
@@ -52,9 +53,9 @@ test:
 
 about:
   home: http://www.pylint.org/
-  license: GPL 2
+  license: GPL-2.0-only
   license_file: COPYING
-  summary: 'python code static checker'
+  summary: python code static checker
   description: |
     Pylint is a tool that checks for errors in Python code, tries to enforce a
     coding standard and looks for code smells.
@@ -67,3 +68,4 @@ extra:
     - jakirkham
     - jjhelmus
     - timleslie
+    - goanpeca
