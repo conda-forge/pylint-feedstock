@@ -1,4 +1,4 @@
-{% set version = "2.6.0" %}
+{% set version = "2.7.0" %}
 
 package:
   name: pylint
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pylint/pylint-{{ version }}.tar.gz
-  sha256: bb4a908c9dadbc3aac18860550e870f58e1a02c9f2c204fdf5693d73be061210
+  sha256: 2e0c6749d809985e4f181c336a8f89b2b797340d8049160bf95f35a3f0ecf6fc
 
 build:
-  number: 1
+  number: 0
   skip: true  # [py<34]
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   entry_points:
