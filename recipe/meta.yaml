@@ -1,4 +1,4 @@
-{% set version = "2.6.0" %}
+{% set version = "2.7.2" %}
 
 package:
   name: pylint
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pylint/pylint-{{ version }}.tar.gz
-  sha256: bb4a908c9dadbc3aac18860550e870f58e1a02c9f2c204fdf5693d73be061210
+  sha256: 0e21d3b80b96740909d77206d741aa3ce0b06b41be375d92e1f3244a274c1f8a
 
 build:
-  number: 1
+  number: 0
   skip: true  # [py<34]
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   entry_points:
@@ -28,7 +28,7 @@ requirements:
     - pytest-runner
 
   run:
-    - astroid >=2.4.0,<=2.5
+    - astroid >=2.5.1,<2.6
     - colorama  # [win]
     - isort >=4.2.5,<6
     - mccabe >=0.6,<0.7
