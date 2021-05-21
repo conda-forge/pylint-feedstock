@@ -58,7 +58,7 @@ test:
 about:
   home: http://www.pylint.org/
   license: GPL-2.0-only
-  license_file: COPYING
+  license_file: LICENSE
   summary: python code static checker
   description: |
     Pylint is a tool that checks for errors in Python code, tries to enforce a
