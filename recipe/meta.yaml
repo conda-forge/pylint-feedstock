@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pylint/pylint-{{ version }}.tar.gz
-  sha256: f7e2072654a6b6afdf5e2fb38147d3e2d2d43c89f648637baab63e026481279b
+  sha256: 586d8fa9b1891f4b725f587ef267abe2a1bad89d6b184520c7f07a253dd6e217
 
 build:
   number: 0
