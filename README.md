@@ -127,4 +127,5 @@ Feedstock Maintainers
 * [@goanpeca](https://github.com/goanpeca/)
 * [@jakirkham](https://github.com/jakirkham/)
 * [@timleslie](https://github.com/timleslie/)
+* [@wshanks](https://github.com/wshanks/)
 
