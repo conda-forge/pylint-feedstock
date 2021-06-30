@@ -1,4 +1,4 @@
-{% set version = "2.8.3" %}
+{% set version = "2.9.0" %}
 
 package:
   name: pylint
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pylint/pylint-{{ version }}.tar.gz
-  sha256: 0a049c5d47b629d9070c3932d13bff482b12119b6a241a93bc460b0be16953c8
+  sha256: 697f69ec93ad6ec9cf0eecff54ac7e1fb836e1330807a2d077173de42b54cf14
 
 build:
   number: 0
@@ -26,7 +26,7 @@ requirements:
     - setuptools-scm
 
   run:
-    - astroid ==2.5.6
+    - astroid >=2.6.1,<2.7
     - colorama
     - isort >=4.2.5,<6
     - mccabe >=0.6,<0.7
