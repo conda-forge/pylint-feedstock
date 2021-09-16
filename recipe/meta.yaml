@@ -1,4 +1,4 @@
-{% set version = "2.10.2" %}
+{% set version = "2.11.0" %}
 
 package:
   name: pylint
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pylint/pylint-{{ version }}.tar.gz
-  sha256: 6758cce3ddbab60c52b57dcc07f0c5d779e5daf0cf50f6faacbef1d3ea62d2a1
+  sha256: 315fc81fad20d495f374d8fde685e442d4b6e3b275a5940fc212ae0484cb2eb6
 
 build:
   number: 0
