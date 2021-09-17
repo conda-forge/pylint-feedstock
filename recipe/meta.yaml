@@ -1,4 +1,4 @@
-{% set version = "2.10.2" %}
+{% set version = "2.11.1" %}
 
 package:
   name: pylint
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pylint/pylint-{{ version }}.tar.gz
-  sha256: 6758cce3ddbab60c52b57dcc07f0c5d779e5daf0cf50f6faacbef1d3ea62d2a1
+  sha256: 2c9843fff1a88ca0ad98a256806c82c5a8f86086e7ccbdb93297d86c3f90c436
 
 build:
   number: 0
@@ -22,17 +22,16 @@ requirements:
   host:
     - python >=3.6,<4
     - pip
-    - pytest-runner
-    - setuptools-scm
 
   run:
-    - astroid >=2.7.2,<2.8
+    - astroid >=2.8.0,<2.9
     - colorama
     - isort >=4.2.5,<6
     - mccabe >=0.6,<0.7
     - platformdirs >=2.2.0
     - python >=3.6,<4
     - toml >=0.7.1
+    - typing_extensions
 
 test:
   imports:
