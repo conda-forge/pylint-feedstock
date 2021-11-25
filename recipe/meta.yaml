@@ -1,4 +1,4 @@
-{% set version = "2.12.0" %}
+{% set version = "2.12.1" %}
 
 package:
   name: pylint
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pylint/pylint-{{ version }}.tar.gz
-  sha256: 245c87e5da54c35b623c21b35debf87d93b18bf9e0229515cc172d0b83d627cd
+  sha256: 4f4a52b132c05b49094b28e109febcec6bfb7bc6961c7485a5ad0a0f961df289
 
 build:
   number: 0
@@ -20,18 +20,18 @@ build:
 
 requirements:
   host:
-    - python >=3.6,<4
+    - python >=3.6.2,<4
     - pip
 
   run:
-    - astroid >=2.8.0,<2.9
+    - astroid >=2.9.0,<2.10
     - colorama
     - isort >=4.2.5,<6
     - mccabe >=0.6,<0.7
     - platformdirs >=2.2.0
-    - python >=3.6,<4
-    - toml >=0.7.1
-    - typing_extensions
+    - python >=3.6.2,<4
+    - toml >=0.9.2
+    - typing_extensions >=3.10
 
 test:
   imports:
@@ -57,7 +57,7 @@ test:
     - pip
 
 about:
-  home: https://www.pylint.org
+  home: https://pylint.org
   license: GPL-2.0-only
   license_file: LICENSE
   summary: python code static checker
