@@ -1,7 +1,7 @@
 About pylint
 ============
 
-Home: https://www.pylint.org
+Home: https://pylint.org
 
 Package license: GPL-2.0-only
 
