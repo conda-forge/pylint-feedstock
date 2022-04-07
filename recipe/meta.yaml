@@ -32,7 +32,7 @@ requirements:
     - platformdirs >=2.2.0
     - python >=3.6.2
     - tomli >=1.1.0
-    - typing-extensions >=3.10.0
+    - typing_extensions >=3.10.0
 
 test:
   imports:
