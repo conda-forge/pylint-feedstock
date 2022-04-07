@@ -1,4 +1,4 @@
-{% set version = "2.13.4" %}
+{% set version = "2.13.5" %}
 
 package:
   name: pylint
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pylint/pylint-{{ version }}.tar.gz
-  sha256: 7cc6d0c4f61dff440f9ed8b657f4ecd615dcfe35345953eb7b1dc74afe901d7a
+  sha256: dab221658368c7a05242e673c275c488670144123f4bd262b2777249c1c0de9b
 
 build:
   number: 0
@@ -32,7 +32,7 @@ requirements:
     - platformdirs >=2.2.0
     - python >=3.6.2
     - tomli >=1.1.0
-    - typing-extensions >=3.10.0
+    - typing_extensions >=3.10.0
 
 test:
   imports:
