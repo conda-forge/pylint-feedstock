@@ -9,7 +9,7 @@ source:
   sha256: 095567c96e19e6f57b5b907e67d265ff535e588fe26b12b5ebe1fc5645b2c731
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   entry_points:
@@ -24,7 +24,7 @@ requirements:
     - pip
 
   run:
-    - astroid >=2.11.3,<=2.12.0
+    - astroid >=2.11.5,<=2.12.0
     - colorama
     - dill >=0.2
     - isort >=4.2.5,<6
