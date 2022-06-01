@@ -1,4 +1,4 @@
-{% set version = "2.13.9" %}
+{% set version = "2.14.0" %}
 {% set min_astroid = "2.11.5" %}
 {% set max_astroid = "2.12.0" %}
 
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pylint/pylint-{{ version }}.tar.gz
-  sha256: 095567c96e19e6f57b5b907e67d265ff535e588fe26b12b5ebe1fc5645b2c731
+  sha256: 10d291ea5133645f73fc1b51ca137ad6531223c1461a5632a1db029a9bc033b5
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   entry_points:
@@ -34,6 +34,7 @@ requirements:
     - platformdirs >=2.2.0
     - python >=3.7.2
     - tomli >=1.1.0
+    - tomlkit >=0.10.1
     - typing_extensions >=3.10.0
 
 test:
