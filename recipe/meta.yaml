@@ -34,7 +34,7 @@ requirements:
     - platformdirs >=2.2.0
     - python >=3.7.2
     - tomli >=1.1.0
-    - tomlkit>=0.10.1
+    - tomlkit >=0.10.1
     - typing_extensions >=3.10.0
 
 test:
