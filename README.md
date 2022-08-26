@@ -154,6 +154,7 @@ Feedstock Maintainers
 * [@bollwyvl](https://github.com/bollwyvl/)
 * [@goanpeca](https://github.com/goanpeca/)
 * [@jakirkham](https://github.com/jakirkham/)
+* [@timkpaine](https://github.com/timkpaine/)
 * [@timleslie](https://github.com/timleslie/)
 * [@wshanks](https://github.com/wshanks/)
 
