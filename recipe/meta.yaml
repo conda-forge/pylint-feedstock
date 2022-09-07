@@ -1,5 +1,5 @@
 {% set version = "2.15.2" %}
-{% set min_astroid = "2.12.4" %}
+{% set min_astroid = "2.12.9" %}
 {% set max_astroid = "2.14.0-dev0" %}
 
 package:
@@ -22,7 +22,7 @@ build:
 
 requirements:
   host:
-    - python >=3.6.2,<4
+    - python >=3.7.2
     - pip
 
   run:
