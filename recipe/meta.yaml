@@ -28,7 +28,6 @@ requirements:
   run:
     - astroid >={{ min_astroid }},<{{ max_astroid }}
     - colorama >=0.4.5
-    - dill >=0.2
     - isort >=4.2.5,<6
     - mccabe >=0.6,<0.8
     - platformdirs >=2.2.0
@@ -36,6 +35,11 @@ requirements:
     - tomli >=1.1.0
     - tomlkit >=0.10.1
     - typing_extensions >=3.10.0
+    # technically...
+    # "dill>=0.2;python_version<'3.11'",
+    # "dill>=0.3.6;python_version>='3.11'",
+    # but to keep noarch...
+    - dill >=0.3.6
 
 test:
   imports:
