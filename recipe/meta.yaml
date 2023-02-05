@@ -1,6 +1,6 @@
-{% set version = "2.15.10" %}
-{% set min_astroid = "2.12.13" %}
-{% set max_astroid = "2.14.0-dev0" %}
+{% set version = "2.16.0" %}
+{% set min_astroid = "2.14.1" %}
+{% set max_astroid = "2.16.0-dev0" %}
 
 package:
   name: pylint
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pylint/pylint-{{ version }}.tar.gz
-  sha256: b3dc5ef7d33858f297ac0d06cc73862f01e4f2e74025ec3eff347ce0bc60baf5
+  sha256: 43ee36c9b690507ef9429ce1802bdc4dcde49454c3d665e39c23791567019c0a
 
 build:
   number: 0
@@ -28,7 +28,6 @@ requirements:
   run:
     - astroid >={{ min_astroid }},<{{ max_astroid }}
     - colorama >=0.4.5
-    - dill >=0.2
     - isort >=4.2.5,<6
     - mccabe >=0.6,<0.8
     - platformdirs >=2.2.0
@@ -36,6 +35,11 @@ requirements:
     - tomli >=1.1.0
     - tomlkit >=0.10.1
     - typing_extensions >=3.10.0
+    # technically...
+    # "dill>=0.2;python_version<'3.11'",
+    # "dill>=0.3.6;python_version>='3.11'",
+    # but to keep noarch...
+    - dill >=0.3.6
 
 test:
   imports:
