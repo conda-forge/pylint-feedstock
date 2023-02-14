@@ -1,4 +1,4 @@
-{% set version = "2.16.1" %}
+{% set version = "2.16.2" %}
 {% set min_astroid = "2.14.1" %}
 {% set max_astroid = "2.16.0-dev0" %}
 
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pylint/pylint-{{ version }}.tar.gz
-  sha256: ffe7fa536bb38ba35006a7c8a6d2efbfdd3d95bbf21199cad31f76b1c50aaf30
+  sha256: 13b2c805a404a9bf57d002cd5f054ca4d40b0b87542bdaba5e05321ae8262c84
 
 build:
   number: 0
