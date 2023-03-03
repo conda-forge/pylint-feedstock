@@ -1,11 +1,11 @@
-About pylint
-============
+About pylint-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pylint-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pylint.org
 
 Package license: GPL-2.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pylint-feedstock/blob/main/LICENSE.txt)
 
 Summary: python code static checker
 
