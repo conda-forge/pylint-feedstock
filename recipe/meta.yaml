@@ -13,7 +13,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   entry_points:
     - pylint = pylint:run_pylint
     - pylint-config = pylint:_run_pylint_config
@@ -41,7 +41,7 @@ requirements:
     # "dill>=0.3.6;python_version>='3.11'",
     # "dill>=0.3.7;python_version>='3.12'",
     # but to keep noarch...
-    - dill >=0.2
+    - dill >=3.7
 
 test:
   imports:
