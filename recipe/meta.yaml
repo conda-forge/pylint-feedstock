@@ -41,7 +41,7 @@ requirements:
     # "dill>=0.3.6;python_version>='3.11'",
     # "dill>=0.3.7;python_version>='3.12'",
     # but to keep noarch...
-    - dill >=3.7
+    - dill >=0.3.7
 
 test:
   imports:
