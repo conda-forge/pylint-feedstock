@@ -55,16 +55,17 @@ test:
   commands:
     - pip check
     - pylint --help
-    - pylint-config --help
     - pyreverse --help
     - symilar --help
+    # currently exits 1 with some warnings about being experimental
+    - which pylint-config || where pylint-config 
 
   requires:
     - pip
     - astroid {{ min_astroid }}
 
 about:
-  home: https://pylint.org
+  home: https://github.com/pylint-dev/pylint
   license: GPL-2.0-or-later
   license_file: LICENSE
   summary: python code static checker
@@ -73,7 +74,6 @@ about:
     coding standard and looks for code smells.
   doc_url: https://pylint.readthedocs.io
   doc_source_url: https://github.com/pylint-dev/pylint/blob/v{{ version }}/doc
-  dev_url: https://github.com/pylint-dev/pylint
 
 extra:
   recipe-maintainers:
