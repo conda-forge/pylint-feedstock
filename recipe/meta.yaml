@@ -1,6 +1,6 @@
 {% set version = "3.0.0" %}
-{% set min_astroid = "2.15.8" %}
-{% set max_astroid = "2.17.0-dev0" %}
+{% set min_astroid = "3.0.0" %}
+{% set max_astroid = "3.1.0-dev0" %}
 
 package:
   name: pylint
@@ -13,17 +13,18 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vv
   entry_points:
     - pylint = pylint:run_pylint
-    - epylint = pylint:run_epylint
+    - pylint-config = pylint:_run_pylint_config
     - pyreverse = pylint:run_pyreverse
     - symilar = pylint:run_symilar
 
 requirements:
   host:
-    - python >=3.7.2
+    - python >=3.8.0
     - pip
+    - setuptools >=66.1
 
   run:
     - astroid >={{ min_astroid }},<{{ max_astroid }}
@@ -31,15 +32,16 @@ requirements:
     - isort >=4.2.5,<6
     - mccabe >=0.6,<0.8
     - platformdirs >=2.2.0
-    - python >=3.7.2
+    - python >=3.8.0
     - tomli >=1.1.0
     - tomlkit >=0.10.1
     - typing_extensions >=3.10.0
     # technically...
     # "dill>=0.2;python_version<'3.11'",
     # "dill>=0.3.6;python_version>='3.11'",
+    # "dill>=0.3.7;python_version>='3.12'",
     # but to keep noarch...
-    - dill >=0.3.6
+    - dill >=0.2
 
 test:
   imports:
@@ -53,11 +55,7 @@ test:
   commands:
     - pip check
     - pylint --help
-    # Has no help option.
-    # Running without arguments is an error.
-    # So just check that it exists.
-    - type epylint  # [unix]
-    - where epylint  # [win]
+    - pylint-config --help
     - pyreverse --help
     - symilar --help
 
@@ -67,15 +65,15 @@ test:
 
 about:
   home: https://pylint.org
-  license: GPL-2.0-only
+  license: GPL-2.0-or-later
   license_file: LICENSE
   summary: python code static checker
   description: |
     Pylint is a tool that checks for errors in Python code, tries to enforce a
     coding standard and looks for code smells.
   doc_url: https://pylint.readthedocs.io
-  doc_source_url: https://github.com/PyCQA/pylint/blob/v{{ version }}/doc
-  dev_url: https://github.com/PyCQA/pylint
+  doc_source_url: https://github.com/pylint-dev/pylint/blob/v{{ version }}/doc
+  dev_url: https://github.com/pylint-dev/pylint
 
 extra:
   recipe-maintainers:
