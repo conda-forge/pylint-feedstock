@@ -1,4 +1,4 @@
-{% set version = "3.0.0" %}
+{% set version = "3.0.1" %}
 {% set min_astroid = "3.0.0" %}
 {% set max_astroid = "3.1.0-dev0" %}
 
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pylint/pylint-{{ version }}.tar.gz
-  sha256: d22816c963816d7810b87afe0bdf5c80009e1078ecbb9c8f2e2a24d4430039b1
+  sha256: 81c6125637be216b4652ae50cc42b9f8208dfb725cdc7e04c48f6902f4dbdf40
 
 build:
   number: 0
@@ -58,7 +58,7 @@ test:
     - pyreverse --help
     - symilar --help
     # currently exits 1 with some warnings about being experimental
-    - which pylint-config || where pylint-config 
+    - which pylint-config || where pylint-config
 
   requires:
     - pip
