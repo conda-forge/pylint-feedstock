@@ -1,5 +1,5 @@
 {% set version = "3.0.2" %}
-{% set min_astroid = "3.0.0" %}
+{% set min_astroid = "3.0.1" %}
 {% set max_astroid = "3.1.0-dev0" %}
 
 package:
