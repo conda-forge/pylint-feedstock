@@ -1,6 +1,6 @@
 {% set version = "3.2.0" %}
-{% set min_astroid = "3.1.0" %}
-{% set max_astroid = "3.2.0-dev0" %}
+{% set min_astroid = "3.2.0" %}
+{% set max_astroid = "3.3.0-dev0" %}
 
 package:
   name: pylint
