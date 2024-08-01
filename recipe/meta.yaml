@@ -54,6 +54,7 @@ test:
 
   commands:
     - pip check
+    - ls "$PREFIX/bin" || dir "$PREFIX/Scripts"
     - pylint --help
     - pyreverse --help
     - symilar --help

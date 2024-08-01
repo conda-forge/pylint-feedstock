@@ -9,3 +9,6 @@ conda_build:
 bot:
   inspection: hint-all
 test: native_and_emulated
+noarch_platforms:
+  - linux_64
+  - win_64
