@@ -1,6 +1,6 @@
 {% set version = "3.3.0" %}
-{% set min_astroid = "3.2.4" %}
-{% set max_astroid = "3.3.0-dev0" %}
+{% set min_astroid = "3.3.0" %}
+{% set max_astroid = "3.4.0-dev0" %}
 
 package:
   name: pylint
@@ -22,8 +22,8 @@ build:
 
 requirements:
   host:
-    - python >=3.8.0
     - pip
+    - python >=3.9.0
     - setuptools >=66.1
 
   run:
@@ -32,7 +32,7 @@ requirements:
     - isort >=4.2.5,<6,!=5.13.0
     - mccabe >=0.6,<0.8
     - platformdirs >=2.2.0
-    - python >=3.8.0
+    - python >=3.9.0
     - tomli >=1.1.0
     - tomlkit >=0.10.1
     - typing_extensions >=3.10.0
