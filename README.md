@@ -9,11 +9,10 @@ Package license: GPL-2.0-or-later
 
 Summary: python code static checker
 
-Documentation: https://pylint.readthedocs.io
+Documentation: https://pylint.readthedocs.io/
 
 Pylint is a tool that checks for errors in Python code, tries to enforce a
 coding standard and looks for code smells.
-
 
 Current build status
 ====================
