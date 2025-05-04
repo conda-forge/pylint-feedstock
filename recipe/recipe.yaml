@@ -50,7 +50,9 @@ requirements:
 
 tests:
   - python:
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - 3.13.*
       pip_check: true
       imports:
         - pylint
