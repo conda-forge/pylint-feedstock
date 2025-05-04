@@ -30,7 +30,7 @@ requirements:
   host:
     - pip
     - python ${{ python_min }}.*
-    - setuptools >=71.0.4
+    - setuptools >=77
   run:
     - astroid >=${{ min_astroid }},<${{ max_astroid }}
     - colorama >=0.4.5
