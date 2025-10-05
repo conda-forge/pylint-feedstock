@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "3.3.8"
+  version: "3.3.9"
   min_astroid: "3.3.8"
   max_astroid: "3.4.0-dev0"
 
@@ -12,7 +12,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pylint/pylint-${{ version }}.tar.gz
-  sha256: 26698de19941363037e2937d3db9ed94fb3303fdadf7d98847875345a8bb6b05
+  sha256: d312737d7b25ccf6b01cc4ac629b5dcd14a0fcf3ec392735ac70f137a9d5f83a
 
 build:
   number: 0
