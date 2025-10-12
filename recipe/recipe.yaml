@@ -40,7 +40,6 @@ requirements:
     - python >=${{ python_min }}
     - tomli >=1.1.0
     - tomlkit >=0.10.1
-    - typing_extensions >=3.10
     # technically...
     # "dill>=0.2;python_version<'3.11'",
     # "dill>=0.3.6;python_version>='3.11'",
@@ -65,7 +64,7 @@ tests:
       run:
         - pip
         - python ${{ python_min }}.*
-        - astroid ${{ min_astroid }}
+        - astroid ${{ min_astroid }}.*
     script:
       # repeat pip check to catch astroid, which cannot be constrained above
       - pip check
