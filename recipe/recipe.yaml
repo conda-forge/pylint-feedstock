@@ -2,9 +2,9 @@
 schema_version: 1
 
 context:
-  version: "3.3.9"
-  min_astroid: "3.3.8"
-  max_astroid: "3.4.0-dev0"
+  version: "4.0.0"
+  min_astroid: "4.0.1"
+  max_astroid: "4.1.0.dev0"
 
 package:
   name: pylint
@@ -12,7 +12,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pylint/pylint-${{ version }}.tar.gz
-  sha256: d312737d7b25ccf6b01cc4ac629b5dcd14a0fcf3ec392735ac70f137a9d5f83a
+  sha256: 62da212808c0681e49ffb125f0a994c685d912cf19ae373075649ebb5870ec28
 
 build:
   number: 0
@@ -32,15 +32,15 @@ requirements:
     - python ${{ python_min }}.*
     - setuptools >=77
   run:
-    - astroid >=${{ min_astroid }},<${{ max_astroid }}
+    - astroid >=${{ min_astroid }},<=${{ max_astroid }}
     - colorama >=0.4.5
-    - isort >=4.2.5,<7,!=5.13.0
+    - isort >=5,<8,!=5.13
     - mccabe >=0.6,<0.8
-    - platformdirs >=2.2.0
+    - platformdirs >=2.2
     - python >=${{ python_min }}
     - tomli >=1.1.0
     - tomlkit >=0.10.1
-    - typing_extensions >=3.10.0
+    - typing_extensions >=3.10
     # technically...
     # "dill>=0.2;python_version<'3.11'",
     # "dill>=0.3.6;python_version>='3.11'",
@@ -52,7 +52,7 @@ tests:
   - python:
       python_version:
         - ${{ python_min }}.*
-        - 3.13.*
+        - 3.14.*
       pip_check: true
       imports:
         - pylint
