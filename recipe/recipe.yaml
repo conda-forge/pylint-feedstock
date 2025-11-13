@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   version: "4.0.3"
-  min_astroid: "4.0.1"
+  min_astroid: "4.0.2"
   max_astroid: "4.1.0.dev0"
 
 package:
