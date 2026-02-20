@@ -2,9 +2,9 @@
 schema_version: 1
 
 context:
-  version: "4.0.4"
+  version: "4.0.5"
   min_astroid: "4.0.2"
-  max_astroid: "4.1.0.dev0"
+  max_astroid: "4.1.dev0"
 
 package:
   name: pylint
@@ -12,7 +12,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pylint/pylint-${{ version }}.tar.gz
-  sha256: d9b71674e19b1c36d79265b5887bf8e55278cbe236c9e95d22dc82cf044fdbd2
+  sha256: 8cd6a618df75deb013bd7eb98327a95f02a6fb839205a6bbf5456ef96afb317c
 
 build:
   number: 0
@@ -34,11 +34,11 @@ requirements:
   run:
     - astroid >=${{ min_astroid }},<=${{ max_astroid }}
     - colorama >=0.4.5
-    - isort >=5,<8,!=5.13
+    - isort >=5,!=5.13,<9
     - mccabe >=0.6,<0.8
     - platformdirs >=2.2
     - python >=${{ python_min }}
-    - tomli >=1.1.0
+    - tomli >=1.1
     - tomlkit >=0.10.1
     # technically...
     # "dill>=0.2;python_version<'3.11'",
@@ -80,7 +80,8 @@ about:
   description: |
     Pylint is a tool that checks for errors in Python code, tries to enforce a
     coding standard and looks for code smells.
-  homepage: https://github.com/pylint-dev/pylint
+  homepage: https://pypi.org/project/pylint
+  repository: https://github.com/pylint-dev/pylint
   documentation: https://pylint.readthedocs.io
 
 extra:
