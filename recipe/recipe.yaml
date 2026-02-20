@@ -80,7 +80,8 @@ about:
   description: |
     Pylint is a tool that checks for errors in Python code, tries to enforce a
     coding standard and looks for code smells.
-  homepage: https://github.com/pylint-dev/pylint
+  homepage: https://pypi.org/project/pylint
+  repository: https://github.com/pylint-dev/pylint
   documentation: https://pylint.readthedocs.io
 
 extra:
