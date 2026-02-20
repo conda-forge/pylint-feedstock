@@ -4,7 +4,7 @@ schema_version: 1
 context:
   version: "4.0.5"
   min_astroid: "4.0.2"
-  max_astroid: "4.1.0.dev0"
+  max_astroid: "4.1.dev0"
 
 package:
   name: pylint
@@ -34,11 +34,11 @@ requirements:
   run:
     - astroid >=${{ min_astroid }},<=${{ max_astroid }}
     - colorama >=0.4.5
-    - isort >=5,<8,!=5.13
+    - isort >=5,!=5.13,<9
     - mccabe >=0.6,<0.8
     - platformdirs >=2.2
     - python >=${{ python_min }}
-    - tomli >=1.1.0
+    - tomli >=1.1
     - tomlkit >=0.10.1
     # technically...
     # "dill>=0.2;python_version<'3.11'",
