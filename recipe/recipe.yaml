@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "4.0.7"
+  version: "4.0.8"
   min_astroid: "4.0.2"
   max_astroid: "4.1.dev0"
 
@@ -12,7 +12,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pylint/pylint-${{ version }}.tar.gz
-  sha256: 9b2d1d15791c84b77a4fe2aafe8f0d9570717e2dea06d53b19c105cf60275a52
+  sha256: 1c1b2128bde5ff5e966801413080b6384d42a5782718d528c906dbb6beab94ed
 
 build:
   number: 0
@@ -34,7 +34,7 @@ requirements:
   run:
     - astroid >=${{ min_astroid }},<=${{ max_astroid }}
     - colorama >=0.4.5
-    - isort >=5,!=5.13,<9
+    - isort >=5,!=5.13,<10
     - mccabe >=0.6,<0.8
     - platformdirs >=2.2
     - python >=${{ python_min }}
