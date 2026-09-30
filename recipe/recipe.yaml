@@ -3,8 +3,8 @@ schema_version: 1
 
 context:
   version: "4.1.1"
-  min_astroid: "4.0.2"
-  max_astroid: "4.1.dev0"
+  min_astroid: "4.3.2"
+  max_astroid: "4.4"
   python_check_max: "3.14"
 
 package:
