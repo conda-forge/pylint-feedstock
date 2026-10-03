@@ -2,8 +2,8 @@
 schema_version: 1
 
 context:
-  version: "4.1.1"
-  min_astroid: "4.3.2"
+  version: "4.1.2"
+  min_astroid: "4.3.3"
   max_astroid: "4.4"
   python_check_max: "3.14"
 
@@ -13,7 +13,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/p/pylint/pylint-${{ version }}.tar.gz
-  sha256: 47538540de0a563ff0b6cb781330944b0c9c1a130986ad1c183116ed37ec4538
+  sha256: 235f13dc418c0041c649b42a5c35c99f2ffc6ca8b6a7574958eac5335906a68a
 
 build:
   number: 0
