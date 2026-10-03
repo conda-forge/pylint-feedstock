@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   version: "4.1.2"
-  min_astroid: "4.3.2"
+  min_astroid: "4.3.3"
   max_astroid: "4.4"
   python_check_max: "3.14"
 
